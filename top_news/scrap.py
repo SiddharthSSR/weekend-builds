@@ -3,9 +3,9 @@ import requests
 from newsapi import NewsApiClient
 from newsdataapi import NewsDataApiClient
 
-NYT_API_KEY = "PoNGkT98AqC6Nal3VZNQdCStlVyX7SA0"
-NEWS_API_KEY = '4f1f854b192b4142af69d5de1f38738d'
-NEWSDATA_API_KEY = 'pub_19077db723545c599d2672c7d02f2dd71f479'
+NYT_API_KEY = "YOUR-NYT-API-KEY"
+NEWS_API_KEY = 'YOUR-NEWS-API-KEY'
+NEWSDATA_API_KEY = 'YOUR-NEWSDATA-API-KEY'
 
 def get_articles(api_client, query):
     articles = api_client.get_everything(q=query, language='en')
